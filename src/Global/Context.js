@@ -53,8 +53,8 @@ const Context = (props) => {
       },
       () => {
         //success function/complete function
-        storage
-          .ref("images")
+        
+        storage.ref("images")
           .child(image.name)
           .getDownloadURL()
           .then((url) => {
